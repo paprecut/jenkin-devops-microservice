@@ -41,7 +41,7 @@ pipeline {
 			steps {
 				//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG" this is the primitive way
 				script {
-					dockerImage = docker.build("in28min/currency-exchange-devops:${env.BUILD_TAG}")
+					dockerImage = docker.build("paprecut/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 			}
 		}
